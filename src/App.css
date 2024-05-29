@@ -1,38 +1,105 @@
-.App {
+ 
+ body {
+  background-color: #ffffff;
+ }
+ 
+ h1 {
+  justify-content: center;
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #bbbbbb 45%, #93ee2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Container für das Login-Formular */
+.login-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  
+
+}
+
+/* Überschrift */
+.login-container h2 {
+
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.login-container form {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  
+  padding: 20px;
+  border-radius: 8px;
+ box-shadow: rgba(165,165,165,0.75) 0px 50px 100px -20px, rgba(243, 242, 242, 0.3) 0px 30px 60px -30px, rgba(42, 148, 255, 0.35) 0px -2px 6px 0px inset;
+  width: 300px;
+  
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.login-container label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-container fieldset {
+  margin-bottom: 10px;
+  border: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content:center ;
 }
 
-.App-link {
-  color: #61dafb;
+.login-container legend {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+	background-color:#b8e356;
+	border-radius:6px;
+	border:1px solid #83c41a;
+	display:inline-block;
+	cursor:pointer;
+	color:#a7a7a7;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #86ae47;
+}
+button:hover {
+	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+	background-color:#a5cc52;
+}
+button:active {
+	position:relative;
+	top:1px;
 }
