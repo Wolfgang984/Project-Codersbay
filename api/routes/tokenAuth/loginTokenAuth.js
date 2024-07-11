@@ -20,7 +20,7 @@ router.post("/loginTokenAuth", (req, res) => {
       const user = results[0];
 
       try {
-          const token = jwt.sign({ username: username }, jwtSecret, { expiresIn: '1h' });
+          const token = jwt.sign({ username: username }, jwtSecret, { expiresIn: '2h' });
           res.json({ message: "Token generated", token: token });
 
       } catch (err) {
