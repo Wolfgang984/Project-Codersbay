@@ -56,6 +56,9 @@ function Hundefuehrer() {
       const formattedData = data.map((row) => ({
         ...row,
         geb_datum: row.geb_datum ? new Date(row.geb_datum).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '',
+        tollwut: row.tollwut ? new Date(row.geb_datum).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '',
+        schutzimpfung: row.schutzimpfung ? new Date(row.geb_datum).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '',
+        wurfdatum: row.wurfdatum ? new Date(row.geb_datum).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '',
       }));
       setDogHandler(formattedData);
       console.log(formattedData); // Log the formatted data
@@ -98,16 +101,16 @@ function Hundefuehrer() {
     { field: 'hundename', headerName: 'Hundename', width: 150 },
     { field: 'rasse', headerName: 'Rasse', width: 200 },
     { field: 'geschlecht', headerName: 'Geschlecht', width: 100 },
-    { field: 'chip_nr', headerName: 'chipnummer', width: 100 },
+    { field: 'chip_nr', headerName: 'chipnummer', width: 200},
     { field: 'wurfdatum', headerName: 'Wurfdatum', width: 100 },
     { field: 'hundegröße_in_cm', headerName: 'Hundegröße', width: 100 },
-    { field: 'schutzimpfung', headerName: 'Schutzimpfung', width: 100 },
-    { field: 'tollwut', headerName: 'Tollwut', width: 100 },
-    { field: 'versicherung', headerName: 'Versicherung', width: 100 },
-    { field: 'zuchtbuch_nr', headerName: 'Zuchtbuchnummer ', width: 100 },
-    { field: 'vater', headerName: 'Hundevater', width: 100 },
-    { field: 'zuchtbuch_nr_vater', headerName: 'Zb.Nr. Vater', width: 100 },
-    { field: 'mutter', headerName: 'Mutter', width: 100 },
+    { field: 'schutzimpfung', headerName: 'Schutzimpfung', width: 200 },
+    { field: 'tollwut', headerName: 'Tollwut', width: 200 },
+    { field: 'versicherung', headerName: 'Versicherung', width: 150 },
+    { field: 'zuchtbuch_nr', headerName: 'Zuchtbuchnummer ', width: 150 },
+    { field: 'vater', headerName: 'Hundevater', width: 150 },
+    { field: 'zuchtbuch_nr_vater', headerName: 'Zb.Nr. Vater', width: 150 },
+    { field: 'mutter', headerName: 'Mutter', width: 150 },
     { field: 'newsletter', headerName: 'Newsletter', width: 100 },
     { field: 'whatsapp', headerName: 'Whatsapp', width: 100 },
     { field: 'foto', headerName: 'Foto', width: 100 },
@@ -138,6 +141,26 @@ function Hundefuehrer() {
     wurfdatum:row.wurfdatum,
     hundegröße_in_cm:row.hundegröße_in_cm,
     schutzimpfung:row.schutzimpfung,
+    tollwut:row.tollwut,
+    versicherung:row.versicherung,
+    zuchtbuch_nr:row.zuchtbuch_nr,
+    vater:row.vater,
+    zuchtbuch_nr_vater:row.zuchtbuch_nr_vater,
+    mutter:row.mutter,
+    newsletter:row.newsletter,
+    whatsapp:row.whatsapp,
+    foto:row.foto,
+    video:row.video,
+    sms:row.sms
+
+
+
+
+
+
+
+    
+
     
 
 
