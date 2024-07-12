@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
+import imageHeader from '../../assets/Bilder/writingDog.png'
 
 
 function Step5({ onOwnerConfirm }) {
@@ -64,18 +65,25 @@ function Step5({ onOwnerConfirm }) {
   };
 
   return (
-    <div id="profil">
+    <div>
+        <div className="header">
+    <img src={imageHeader} alt="Header" />
+  </div>
+    <form id="profil">
       <h2>Schritt 5: Besitzerinformation</h2>
       <p>Sind Sie der Besitzer des Hundes?</p>
+      
       <label>
         <input type="radio" name="isOwner" value="yes" onChange={() => { setIsOwner('yes'); console.log('Is owner: yes'); }} />
         Ja
       </label>
+     
+    
       <label>
         <input type="radio" name="isOwner" value="no" onChange={() => { setIsOwner('no'); console.log('Is owner: no'); }} />
         Nein
       </label>
-
+     
       {isOwner === 'no' && (
         <div>
           <h3>Besitzerdaten eingeben</h3>
@@ -129,8 +137,10 @@ function Step5({ onOwnerConfirm }) {
             </select>
           </label>
         </div>
+
       )}
       <button onClick={handleConfirm}>Weiter</button>
+    </form>
     </div>
   );
 }

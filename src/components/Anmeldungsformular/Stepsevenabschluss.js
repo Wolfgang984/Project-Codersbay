@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import imageHeader from '../../assets/Bilder/writingDog.png'
 
 
 function Step7({
@@ -91,15 +92,20 @@ function Step7({
   };
 
   return (
-    <div className="step7-container">
+    <div>
+    <div className="header">
+    <img src={imageHeader} alt="Header" />
+  </div>
+    <form id="profil">
       <h2>Anmeldung Hundeschule</h2>
       <div>
         <h3>
          
-          Wir freuen uns sehr {userData?.vorname} für dein Interesse an dem Kurs {consentData.kurs_name}.
+          Wir freuen uns sehr {userData?.vorname} für dein Interesse an dem Kurs {courseObject.kurs_name}.
         </h3>
         <h3>
         Bitte klicke auf "Registrierung abschließen" um die Anmeldung zu bestätigen. Im Anschluss erhältst du dann eine Bestätigungsmail. 
+        <h3 style = {{color:"#e57373", backgroundColor:"#f9f9f9"}}>Sollten sie keine Bestätigungsmail erhalten bitte untersuchen sie den Spamordner oder Kontaktieren sie uns.</h3>
         </h3>
 
         {loading && <p>Speichern...</p>}
@@ -110,6 +116,8 @@ function Step7({
         {success && <p>Daten erfolgreich gespeichert!</p>}
         {error && <p>Fehler beim Speichern der Daten: {error}</p>}
       </div>
+    </form>
+
     </div>
   );
 }

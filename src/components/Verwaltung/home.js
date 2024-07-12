@@ -66,7 +66,7 @@ export default function Home() {
       </h1>
 
       <Box display={"flex"} flexWrap={"wrap"}>
-        <Card className="card" sx={{ maxWidth: 345, margin: 2 }}>
+        <Card className="card" sx={{ width: 300, margin: 2 }}>
           <CardActionArea onClick={handleNavigateToAllMemberData}>
               <CardMedia
                 component="img"
@@ -87,7 +87,7 @@ export default function Home() {
           </CardActionArea>
         </Card>
 
-        <Card sx={{ maxWidth: 345, margin: 2 }}>
+        <Card sx={{ width: 300, margin: 2 }}>
           <CardActionArea onClick={handleNavigateToHundeverwaltung}>
             <CardMedia
               component="img"
@@ -103,7 +103,7 @@ export default function Home() {
           </CardActionArea>
         </Card>
 
-        <Card sx={{ maxWidth: 345, margin: 2 }}>
+        <Card sx={{ width: 300, margin: 2 }}>
           <CardActionArea onClick={handleNavigateToHundefuehrerVerwaltung}>
             <CardMedia
               component="img"
@@ -113,13 +113,13 @@ export default function Home() {
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Hundefuehrerverwaltung
+                Hundeführerverwaltung
               </Typography>
             </CardContent>
           </CardActionArea>
         </Card>
 
-        <Card sx={{ maxWidth: 345, margin: 2 }}>
+        <Card sx={{ width: 300, margin: 2 }}>
           <CardActionArea onClick={handleNavigateToKursveraltung}>
             <CardMedia
               component="img"
@@ -135,7 +135,7 @@ export default function Home() {
           </CardActionArea>
         </Card>
 
-        <Card sx={{ maxWidth: 345, margin: 2 }}>
+        <Card sx={{ width: 300, margin: 2 }}>
           <CardActionArea onClick={handleNavigateToAnmeldung}>
             <CardMedia
               component="img"
@@ -151,7 +151,7 @@ export default function Home() {
           </CardActionArea>
         </Card>
 
-        <Card sx={{ maxWidth: 345, margin: 2 }}>
+        <Card sx={{ width: 300, margin: 2 }}>
           <CardActionArea onClick={handleNavigateToKurse}>
             <CardMedia component="img" height="140" image={Kurs} alt="Kurs" />
             <CardContent>

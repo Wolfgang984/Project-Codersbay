@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import imageHeader from '../../assets/Bilder/writingDog.png'
 
 function Step6({ onConsentConfirm }) {
   const [consentData, setConsentData] = useState({
@@ -37,6 +38,10 @@ function Step6({ onConsentConfirm }) {
 
   return (
     <div>
+         <div className="header">
+    <img src={imageHeader} alt="Header" />
+  </div>
+  <form id='profil'>
       <h2>Schritt 6: Zustimmungserklärung</h2>
       <div>
         <p>Zusendung von Vereinsinformationen per E-Mail</p>
@@ -253,6 +258,7 @@ function Step6({ onConsentConfirm }) {
       </div>
 
       <button onClick={handleConfirm}>Weiter</button>
+      </form>
     </div>
   );
 }

@@ -92,9 +92,9 @@ h1 {
 .headerUnderline::after {
   content: '';
   display: block;
-  width: 50px; /* Länge des Strichs */
-  height: 3px; /* Dicke des Strichs */
-  background-color: #6A994E; /* Farbe des Strichs */
+  width: 50px; 
+  height: 3px; 
+  background-color: #6A994E; 
   position: absolute;
   bottom: 0;
   left: 0;
@@ -102,11 +102,11 @@ h1 {
 
 .row-even {
   background-color: #f0f0f0;
-  
 }
 
 .row-odd {
   background-color: #ffffff;
+
 
 }
 
@@ -118,6 +118,141 @@ h1 {
   background-color: #d0d0d0;
   font-weight: bold;
 }
+
+/******** Formular *******/
+
+
+form#profil {
+  background-color: #e1f7e0;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+.header{width: 100%;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+form#profil h2 {
+  text-align: center;
+  color: #388835de;
+  font-family: 'Comic Sans MS', cursive;
+  margin-top: 20px;
+}
+
+form#profil .form-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+form#profil h3 {
+  text-align: center;
+  color: #388835de;
+  font-family: 'Comic Sans MS', cursive;
+  margin-bottom: 20px;
+}
+
+form#profil div {
+  margin-bottom: 15px;
+}
+
+form#profil label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form#profil input[type="text"],
+form#profil input[type="email"],
+form#profil input[type="date"],
+form#profil select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+form#profil input[type="text"]:focus,
+form#profil input[type="email"]:focus,
+form#profil input[type="date"]:focus,
+form#profil select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+form#profil button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6A994E;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+form#profil button:hover {
+  background-color: #386641;
+}
+
+form#profil p {
+  text-align: center;
+  color: #555; 
+  font-family: 'Arial', sans-serif; 
+  font-size: 1.2em; 
+  margin-bottom: 20px; 
+}
+
+form#profil p.error {
+  color: red;
+}
+
+form#profil .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+form#profil .grid-container label {
+  grid-column: span 2;
+}
+
+form#profil .grid-container input,
+form#profil .grid-container select {
+  grid-column: span 2;
+}
+
+
+
+
+
 
   
 

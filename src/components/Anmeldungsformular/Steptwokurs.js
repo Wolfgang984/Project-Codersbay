@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import imageHeader from '../../assets/Bilder/writingDog.png'
 
 function Step2({ season, onCourseSelect }) {
   const [courses, setCourses] = useState([]);
@@ -45,6 +46,10 @@ function Step2({ season, onCourseSelect }) {
   };
 
   return (
+    <div>
+        <div className="header">
+    <img src={imageHeader} alt="Header" />
+  </div>
     <form id="profil" onSubmit={handleSubmit}>
       <h2>Anmeldung Hundeschule</h2>
       <div>
@@ -67,6 +72,7 @@ function Step2({ season, onCourseSelect }) {
       </div>
       <button type="submit">Weiter</button>
     </form>
+    </div>
   );
 }
 

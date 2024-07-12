@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import imageHeader from '../../assets/Bilder/writingDog.png'
 
 
 function Step1({ onNext }) {
@@ -34,7 +35,10 @@ function Step1({ onNext }) {
   };
 
   return (
-
+    <div>
+         <div className="header">
+    <img src={imageHeader} alt="Header" />
+  </div>
     
     <form id="profil" onSubmit={handleSubmit}>
       <h2>Anmeldung Hundeschule</h2>
@@ -58,6 +62,7 @@ function Step1({ onNext }) {
       </div>
       <button type="submit">Weiter</button>
     </form>
+    </div>
   );
 }
 

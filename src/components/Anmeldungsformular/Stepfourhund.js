@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import imageHeader from '../../assets/Bilder/writingDog.png'
 
 function Step4({ userData, selectedSeason, selectedCourse, onDogConfirm }) {
   const [dogs, setDogs] = useState([]);
@@ -91,7 +92,11 @@ function Step4({ userData, selectedSeason, selectedCourse, onDogConfirm }) {
   };
 
   return (
-    <div id="profil">
+    <div>
+      <div className="header">
+    <img src={imageHeader} alt="Header" />
+  </div>
+    <form id="profil">
       <h2>Anmeldung Hundeschule</h2>
       <div>
     
@@ -168,6 +173,7 @@ function Step4({ userData, selectedSeason, selectedCourse, onDogConfirm }) {
           <button onClick={handleConfirm}>Bestätigen</button>
         </div>
       )}
+    </form>
     </div>
   );
 }
